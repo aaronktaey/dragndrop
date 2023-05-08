@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+const myContainer = {
+  "display": "flex",
+  "flex-flow": "row wrap",
+  "justify-content": "space-between",
+  "width": "500px",
+}
+
+const myItem = {
+  "color": "red",
+  "width": "50px",
+}
 
 function App() {
+  
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <div style={myContainer}>
+        <div style={myItem}>1</div>
+        <div style={myItem}>2</div>
+        <div style={myItem}>3</div>
+        <div style={myItem}>4</div>
+        <div style={myItem}>5</div>
+        <div style={myItem}>6</div>
+        <div style={myItem}>7</div>
+        <div style={myItem}>8</div>
+        <div style={myItem}>9</div>
+        <div style={myItem}>10</div>
+      </div>
     </div>
   );
 }
