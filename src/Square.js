@@ -8,6 +8,9 @@ const Square = ({black, children}) => {
                 height : '100%',
                 backgroundColor : fill,
                 color : stroke,
+                borderWidth: '1px',
+                borderStyle: 'solid',
+                margin: '1px',
             }}
         >
             {children}
